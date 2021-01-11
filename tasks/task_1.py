@@ -1,8 +1,6 @@
-import os
-fname = input('Введите названия для файла: ')
-file = open(fname + '.txt', "w")
-file1 = file.write(input('Введите свой текст: '))
-file.close()
-file = open(fname + '.txt')
-file.close()
-os.remove(fname + '.txt')
+word = input('Введите своё слово: ')
+word = word.replace(' ','').replace('.','').replace(',','').lower()
+if word == word [::-1]:
+    print('Palindrome')
+else:
+    print('Oh no!')
